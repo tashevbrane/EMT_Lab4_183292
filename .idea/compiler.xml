@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="phone-catalog" />
+        <module name="shared-kernel" />
+        <module name="order-management" />
+        <module name="ddd" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ddd-product-ordering" target="11" />
+      <module name="movie-catalog" target="17" />
+      <module name="sales-managment" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="movie-catalog" options="-parameters" />
+      <module name="order-management" options="-parameters" />
+      <module name="phone-catalog" options="-parameters" />
+      <module name="sales-managment" options="-parameters" />
+      <module name="shared-kernel" options="-parameters" />
+    </option>
+  </component>
+</project>
